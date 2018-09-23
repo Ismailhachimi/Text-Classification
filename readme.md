@@ -6,21 +6,21 @@ ____
 > This project is a step to understand the state-of-the-art of Dialog Generation and Action Detection systems. In the last part, we propose of a mixed architecture of the said systems.
 
 ## Project Plan
-1. Introduction
-2. State of the art
-	1. Dialog Generation and Action Detection
-    	1. State-of-the-art technologies
-    	2. Dialog Generation and Action Detection in Deep Learning
-    2. Word Representation
-3. Text Data
-    1. Getting data using Web Scraping
-    2. Production and comparison of Word Representation models
-4. A Dialog Generation and Action Detection mixed architecture
-    1. An overview of a proposed solution
-    2. Implementation and results
-5. Perspectives
-6. Conclusion
-7. Bibliography
+1. [Introduction](#1-introduction)
+2. [State of the art](#2-state-of-the-art)
+    1. [Dialog Generation and Action Detection](#i-dialog-generation-and-action-detection)
+    	1. [State-of-the-art technologies](#a-state-of-the-art-technologies-)
+    	2. [Dialog Generation and Action Detection in Deep Learning](#b-dialog-generation-and-action-detection-in-deep-learning-)
+    2. [Word Representation](#ii-word-representation)
+3. [Text Data](#3-text-data)
+    1. [Getting data using Web Scraping](#i-getting-data-using-web-scraping)
+    2. [Production and comparison of Word Representation models](#ii-production-and-comparison-of-word-representation-models)
+4. [A Dialog Generation and Action Detection mixed architecture](#4-a-dialog-generation-and-action-detection-mixed-architecture)
+    1. [An overview of a proposed solution](#i-an-overview-of-a-proposed-solution)
+    2. [Implementation and results](#ii-implementation-and-results)
+5. [Perspectives](#5-perspectives)
+6. [Conclusion](6-conclusion)
+7. [Bibliography](#7-bibliography)
 
 ## 1. Introduction
 
@@ -49,7 +49,7 @@ ____
 >	- FastText (2017)
 >	- GloVe (2015)
 >	- Word2Vec (2013)
->	- ELMo (2018) - arxiv.org/abs/1802.05365
+>	- ELMo (2018)
 
 ## 3. Text Data
 
