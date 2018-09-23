@@ -77,6 +77,7 @@ ____
 > In this chapter, we proposed more ideas for future work on this project. 
 
 ## 6. Conclusion
+
 > A brief resume on the work during the project period, the achieved results and the future advances that might be applied to improve our solution.
 
 ## 7. Bibliography
