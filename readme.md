@@ -5,14 +5,14 @@ ____
 
 # Dialog Generation and Action Detection in Deep Learning
 
-> This project is a step to understand the state-of-the-art of Dialog Generation and Action Detection systems. In the last part, we propose of a mixed architecture of the said systems.
+> This project is a step to understand the state-of-the-art of dialog generation and intent identification. In the last part, we propose a mixed architecture of the said systems.
 
 ## Project Plan
 1. [Introduction](#1-introduction)
 2. [State of the art](#2-state-of-the-art)
     1. [Dialog Generation and Action Detection](#i-dialog-generation-and-action-detection)
     	1. [State-of-the-art technologies](#a-state-of-the-art-technologies-)
-    	2. [Dialog Generation and Action Detection in Deep Learning](#b-dialog-generation-and-action-detection-in-deep-learning-)
+    	2. [Dialog Generation and intent identification in Deep Learning](#b-dialog-generation-and-action-detection-in-deep-learning-)
     2. [Word Representation](#ii-word-representation)
 3. [Text Data](#3-text-data)
     1. [Getting data using Web Scraping](#i-getting-data-using-web-scraping)
@@ -30,7 +30,7 @@ ____
 
 ## 2. State of the art
 
-### i. Dialog Generation and Action Detection
+### i. Dialog Generation and intent identification
 
 #### a. State-of-the-art technologies : 
 
