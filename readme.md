@@ -13,8 +13,8 @@ This project is a step towards understanding the state of the art of text classi
     	1. [Text classification technologies](#a-text-classification-technologies-)
     	2. [Text classification in Deep Learning](#b-text-classification-in-deep-learning-)
 3. [Getting data](#3-getting-data)
-    1. [Audio data and Google Cloud Speech](#i-audio-data-and-google-cloud-speech)
-    2. [Comparison of word representation models](#ii-comparison-of-word-representation-models)
+    1. [French audio data and Google Cloud Speech](#i-french-audio-data-and-google-cloud-speech)
+    2. [Text data for Arabic text classification](#ii-comparison-of-word-representation-models)
 4. [A text classification architecture](#4-a-text-classification-architecture)
     1. [An overview of the solution](#i-an-overview-of-the-solution)
     2. [Implementation and results](#ii-implementation-and-results)
@@ -67,22 +67,23 @@ In this part, we explain the state-of-the-art of text classification in deep lea
 
 ## 3. Getting data
 
-### i. Audio data and Google Cloud Speech
+### i. French audio data and Google Cloud Speech
 
 In this part, we introduce Google Cloud API, which is a component of Google Cloud Platform. We use google speech API in order to map audio data to text data after scraping [this website](http://www.archives-manche.fr) which contains archives of old spoken french audio about many topics.
 
-For this section, we need to :
+First, we choosed this solution for French classification data in order to make an audio classifier using two components : Speech to Text and Text to action (or classification). In fact, this allowed us to see how GCP performs on noised data. After making some requests on few files from the said [website](http://www.archives-manche.fr), we concluded that we cannot rely on GCP Speech API due to its limitation to noiseless audio data. Finally, we choosed to let French text classification for futher work and focus on Arabic text classification.
 
-	- Scrape Text data from the said website
-	- Make a volumetric analysis report on the audio data
+### ii. Text data for Arabic text classification
 
+In this part, we cite text data that we choosed to train our text classification model using Word2Vec word embedding model as marked in this [Section](#i-word-representation).
 
-### ii. Comparison of Word representation models
+The dataset is a collection of Arabic texts, which covers modern Arabic language used in newspapers articles. For this, we thank Mohamed BINIZ for making it available.
 
-In this part, we : 
+#### Citation
 
-	- reproduce the state-of-the-art word representation models
-	- compare the resulting models 
+> Mohamed, BINIZ (2018), “DataSet for Arabic Classification”, Mendeley Data, v2
+> [DOI](http://dx.doi.org/10.17632/v524p5dhpj.2)
+> Dataset: DataSet for Arabic Classification
 
 ## 4. A text classification architecture
 
