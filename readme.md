@@ -3,7 +3,7 @@
 
 **Under supervision of Mr. [Stéphane Canu](https://scholar.google.fr/citations?user=PpibCZUAAAAJ&hl=fr&oi=ao)**
 
-> This project is a step towards understanding the state of the art of text classification in deep learning. As a result, we propose an attention-based architecture as a contribution.
+This project is a step towards understanding the state of the art of text classification in deep learning. As a result, we propose an attention-based architecture as a contribution.
 
 ## Project Plan
 1. [Introduction](#1-introduction)
@@ -24,7 +24,7 @@
 
 ## 1. Introduction
 
-> This project is an assembly of research and learning processes which aims to understand the state-of-the-art of text classification in deep learning as it requires us to look for a relevant data source, go through word representation models and compare them as a first step. In the second phase, we compare the technologies that contain text classification concept and we understand how they work. Finally, we explain in detail the text classification in deep learning and propose an attention-based architecture as a contribution.
+This project is an assembly of research and learning processes which aims to understand the state-of-the-art of text classification in deep learning as it requires us to look for a relevant data source, go through word representation models and compare them as a first step. In the second phase, we compare text classification based technologies and we try to understand how they work. Finally, we explain in detail text classification in deep learning and propose an attention-based architecture as a result of this project.
 
 ## 2. State of the art
 
@@ -36,16 +36,16 @@ In this project, we try to elaborate the state of the art of text classification
 
 The main state of the art Word Representation models are : 
 
->	- FastText (2017)
->	- GloVe (2015)
->	- Word2Vec (2013)
->	- ELMo (2018)
+>	- [Word2Vec](https://arxiv.org/pdf/1310.4546) (2013)
+>	- [GloVe](https://nlp.stanford.edu/pubs/glove.pdf) (2015)
+>	- [FastText](https://arxiv.org/pdf/1607.04606) (2017)
+>	- [ELMo](https://arxiv.org/pdf/1802.05365) (2018)
 
 For the first part, we use a pretrained language model Word2Vec taken from this [Github Repository](https://github.com/bakrianoo/aravec) as a result of research paper mentioned in [Citation](#Citation). Thanks [bakrianoo - Abu Bakr Soliman](https://github.com/bakrianoo).
 
 #### Citation
 
-Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.
+> Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.
 
 ### ii. Text classification
 
@@ -73,16 +73,16 @@ In this part, we introduce Google Cloud API, which is a component of Google Clou
 
 For this section, we need to :
 
->	- Scrape Text data from the said website
->	- Make a volumetric analysis report on the audio data
+	- Scrape Text data from the said website
+	- Make a volumetric analysis report on the audio data
 
 
 ### ii. Comparison of Word representation models
 
 In this part, we : 
 
->	- reproduce the state-of-the-art word representation models
->	- compare the resulting models 
+	- reproduce the state-of-the-art word representation models
+	- compare the resulting models 
 
 ## 4. A text classification architecture
 
@@ -92,11 +92,11 @@ In this part, we :
 
 ## 5. Perspectives
 
-> In this chapter, we proposed more ideas for future work on this project. 
+In this chapter, we proposed more ideas for future work on this project. 
 
 ## 6. Conclusion
 
-> A brief resume on the work during the project period, the achieved results and the future advances that might be applied to improve our solution.
+A brief resume on the work during the project period, the achieved results and the future advances that might be applied to improve our solution.
 
 ## 7. Bibliography
 
