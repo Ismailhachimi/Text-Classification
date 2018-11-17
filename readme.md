@@ -24,17 +24,28 @@
 
 ## 1. Introduction
 
-> This project is an assembly of research and learning processes which aims to understand the state-of-the-art of text classification in deep learning as it requires us to look for a relevant data source, go through word representation models and compare them as a first step. In the second phase, we compare the technologies that contain text classification concept and we understand how they work. Finally, we explain in detail the text classification in deep learning and propose an attention-based architecture as a contribution.
+This project is an assembly of research and learning processes which aims to understand the state-of-the-art of text classification in deep learning as it requires us to look for a relevant data source, go through word representation models and compare them as a first step. In the second phase, we compare text classification based technologies and we try to understand how they work. Finally, we explain in detail text classification in deep learning and propose an attention-based architecture as a result of this project.
 
 ## 2. State of the art
 
 ### i. Word representation
 
-> Explain Word Representation models and train them on spoken French data. The models of the state-of-the-art are :
->	- FastText (2017)
->	- GloVe (2015)
->	- Word2Vec (2013)
->	- ELMo (2018)
+Word representation is a major change in NLP research due to its great help in late advances in different problems related to text analysis for specific topic : Text classification, Topic modeling, intention recognition etc.
+
+In this project, we try to elaborate the state of the art of text classification in Arabic using language models and deep learning. The use of language models is due to simplicity of intergration in a neural network and its intuition of representiong words in a vectorial space which helps calculating dependencies between words.
+
+The main state of the art Word Representation models are : 
+
+>	- [Word2Vec](https://arxiv.org/pdf/1310.4546) (2013)
+>	- [GloVe](https://nlp.stanford.edu/pubs/glove.pdf) (2015)
+>	- [FastText](https://arxiv.org/pdf/1607.04606) (2017)
+>	- [ELMo](https://arxiv.org/pdf/1802.05365) (2018)
+
+For the first part, we use a pretrained language model Word2Vec taken from this [Github Repository](https://github.com/bakrianoo/aravec) as a result of research paper mentioned in [Citation](#Citation). Thanks [bakrianoo - Abu Bakr Soliman](https://github.com/bakrianoo).
+
+#### Citation
+
+> Abu Bakr Soliman, Kareem Eisa, and Samhaa R. El-Beltagy, “AraVec: A set of Arabic Word Embedding Models for use in Arabic NLP”, in proceedings of the 3rd International Conference on Arabic Computational Linguistics (ACLing 2017), Dubai, UAE, 2017.
 
 ### ii. Text classification
 
@@ -44,7 +55,7 @@ Today's technologies are a sort of dialog generation systems that offer a new ty
 
 To learn more about these systems, we will deploy on each of the following technologies a model to quantify the capacity of each one :
 
->	- Watson Knowledge Studio 
+>   - Watson Knowledge Studio 
 >   - Alexa Skills Kit 
 >   - Google's DialogFlow
 
