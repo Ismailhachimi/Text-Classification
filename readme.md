@@ -3,7 +3,7 @@
 
 **Under supervision of Mr. [Stéphane Canu](https://scholar.google.fr/citations?user=PpibCZUAAAAJ&hl=fr&oi=ao)**
 
-> This project is a step towards understanding the state of the art of text classification in deep learning. As a result, we propose an attention-based architecture as a contribution.
+This project is a step towards understanding the state of the art of text classification in deep learning. As a result, we propose an attention-based architecture as a contribution.
 
 ## Project Plan
 1. [Introduction](#1-introduction)
@@ -73,16 +73,16 @@ In this part, we introduce Google Cloud API, which is a component of Google Clou
 
 For this section, we need to :
 
->	- Scrape Text data from the said website
->	- Make a volumetric analysis report on the audio data
+	- Scrape Text data from the said website
+	- Make a volumetric analysis report on the audio data
 
 
 ### ii. Comparison of Word representation models
 
 In this part, we : 
 
->	- reproduce the state-of-the-art word representation models
->	- compare the resulting models 
+	- reproduce the state-of-the-art word representation models
+	- compare the resulting models 
 
 ## 4. A text classification architecture
 
@@ -92,11 +92,11 @@ In this part, we :
 
 ## 5. Perspectives
 
-> In this chapter, we proposed more ideas for future work on this project. 
+In this chapter, we proposed more ideas for future work on this project. 
 
 ## 6. Conclusion
 
-> A brief resume on the work during the project period, the achieved results and the future advances that might be applied to improve our solution.
+A brief resume on the work during the project period, the achieved results and the future advances that might be applied to improve our solution.
 
 ## 7. Bibliography
 
