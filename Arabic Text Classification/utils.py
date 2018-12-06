@@ -26,7 +26,7 @@ def get_embedding_matrix(word_index, embedding_index, vocab_dim):
     return embedding_matrix
 
 
-def get_model(embedding_weights, word_index, vocab_dim, max_length, print_summary=True):
+def get_model_first(embedding_weights, word_index, vocab_dim, max_length, print_summary=True):
     inp = Input(shape=(max_length,))
     model = Embedding(input_dim=len(word_index)+1,
                       output_dim=vocab_dim,
@@ -50,7 +50,8 @@ def train_fit_predict(model, x_train, x_test, y_train, batch_size, epochs):
     history = model.fit(x_train, y_train,
                         batch_size=batch_size,
                         epochs=epochs, verbose=1)
-    return history, model.predict(x_test)
+    score = model.predict(x_test)
+    return history, score, model
 
 def get_init_parameters(path):
     word_model = KeyedVectors.load(path).wv
