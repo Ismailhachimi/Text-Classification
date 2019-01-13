@@ -10,7 +10,7 @@ This project is a step towards understanding the state of the art of text classi
 2. [State of the art](#2-state-of-the-art)
     1. [Word representation](#i-word-representation)
     2. [Text classification](#ii-text-classification)
-3. [Data for Arabic text classification](#3-getting-data)
+3. [Data for Arabic text classification](#3-data-for-arabic-text-classification)
 4. [Implementation and results](#4-implementation-and-results)
 5. [Perspectives](#5-perspectives)
 6. [Conclusion](#6-conclusion)
