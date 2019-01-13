@@ -1,5 +1,5 @@
 
-# Text Classification With Attention-based Neural Networks
+# Comparative Study of CNN and RNN for Arabic TextClassification
 
 **Under supervision of Mr. [Stéphane Canu](https://scholar.google.fr/citations?user=PpibCZUAAAAJ&hl=fr&oi=ao)**
 
