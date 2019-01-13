@@ -1,4 +1,5 @@
 import numpy as np
+import io
 
 from keras.layers import Embedding, Dense, LSTM, Dropout, Input
 #from keras.layers import GRU, MaxPooling1D, Conv1D, Flatten
@@ -53,10 +54,13 @@ def train_fit_predict(model, x_train, x_test, y_train, batch_size, epochs):
     score = model.predict(x_test)
     return history, score, model
 
-def get_init_parameters(path):
-    word_model = KeyedVectors.load(path).wv
+def get_init_parameters(path, ext=None):
+    if ext == 'vec':
+        word_model = KeyedVectors.load_word2vec_format(path).wv
+    else:
+        word_model = KeyedVectors.load(path).wv
     n_words = len(word_model.vocab)
-    vocab_dim = word_model[''].shape[0]
+    vocab_dim = word_model[word_model.index2word[0]].shape[0]
     index_dict = dict()
     for i in range(n_words):
         index_dict[word_model.index2word[i]] = i+1
@@ -75,7 +79,7 @@ def get_max_length(text_data, return_line=False):
     else:
         return max_length
     
-def split_datasets(data_paths, test_size, header=True):
+def split_datasets(data_paths, test_size, header=True, seed=42):
     x = []
     y = []
     for data_path in data_paths:
@@ -88,7 +92,7 @@ def split_datasets(data_paths, test_size, header=True):
                     x.append(temp[0])
                     y.append(temp[1].replace('\n', ''))
     max_length = get_max_length(x)
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=test_size, random_state=seed)
     print('Dataset splited.')
     return x_train, x_test, y_train, y_test, max_length
 
@@ -133,8 +137,17 @@ def get_embedding_vectors(vectors, index_dict, n_words, vocab_dim):
     return embedding_weights
 
 
+def load_vectors(fname):
+    fin = io.open(fname, 'r', encoding='utf-8', newline='\n', errors='ignore')
+    n, d = map(int, fin.readline().split())
+    data = {}
+    for line in fin:
+        tokens = line.rstrip().split(' ')
+        data[tokens[0]] = map(float, tokens[1:])
+    return data
 
-# =============================
+
+# ==========Deprecated Code===========
 
 
 def error_on_batch(res, y_test):
