@@ -118,24 +118,16 @@ def class_str_2_ind(x_train, x_test, y_train, y_test, classes, n_words, max_leng
     print('Number of testing examples: ' + str(len(x_vec_test)))
     return x_vec_train, x_vec_test, y_train, y_test, train_y_cat, word_index
 
-
-#===
-
 def get_main_model(word_index, WORD_MODEL, EMBED_SIZE, MAX_TEXT_LENGTH):
     tmp = get_embedding_matrix(word_index, WORD_MODEL, EMBED_SIZE)
     model = get_model(tmp, word_index, EMBED_SIZE, MAX_TEXT_LENGTH, print_summary=True)
     return model
-
-
-# ==================================
-
 
 def get_embedding_vectors(vectors, index_dict, n_words, vocab_dim):
     embedding_weights = np.zeros((n_words+1, vocab_dim)) 
     for word, index in index_dict.items():
         embedding_weights[index, :] = vectors[word]
     return embedding_weights
-
 
 def load_vectors(fname):
     fin = io.open(fname, 'r', encoding='utf-8', newline='\n', errors='ignore')
