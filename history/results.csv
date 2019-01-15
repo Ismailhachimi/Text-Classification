@@ -1,0 +1,5 @@
+,train acc,train acc std,test acc,test acc std,train loss,train loss std,test loss,test loss std
+w2v sg train,96.202,0.64,94.924,0.1,12.032,2.02,16.286,0.39
+w2v cbow No train,95.083,0.04,94.514,0.07,15.751,0.084,19.071,0.19
+fasttext sg No train,95.916,0.009,95.382,0.017,12.907,0.012,14.690,0.019
+fasttext sg train,96.865,0.012,96.166,0.018,10.102,0.058,12.812,0.045
